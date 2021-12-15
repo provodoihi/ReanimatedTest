@@ -42,6 +42,12 @@ const WithTiming = () => {
         onPress={() => (width.value = Math.random() * 256 + 24)}>
         <Text style={styles.txtNavigate}>Touch Mee</Text>
       </TouchableOpacity>
+      <Text
+        accessibilityLabel="text2"
+        testID="text2"
+        style={styles.txtMainScreen}>
+        Some text
+      </Text>
     </View>
   );
 };

@@ -6,7 +6,12 @@ import styles from './Styles';
 const Main = ({navigation}: AppNavigationProps<'Main'>) => {
   return (
     <View style={[styles.container, styles.containerMainScreen]}>
-      <Text style={styles.txtMainScreen}>This is Test Reanimated</Text>
+      <Text
+        accessibilityLabel="text1"
+        testID="text1"
+        style={styles.txtMainScreen}>
+        This is Test Reanimated
+      </Text>
       <TouchableOpacity
         style={styles.touchNavigate}
         onPress={() => navigation.navigate('PanGesture')}>
@@ -24,6 +29,8 @@ const Main = ({navigation}: AppNavigationProps<'Main'>) => {
       </TouchableOpacity>
       <TouchableOpacity
         style={styles.touchNavigate}
+        accessibilityLabel="button1"
+        testID="button1"
         onPress={() => navigation.navigate('WithTiming')}>
         <Text style={styles.txtNavigate}>👍 To With Timing Screen</Text>
       </TouchableOpacity>
