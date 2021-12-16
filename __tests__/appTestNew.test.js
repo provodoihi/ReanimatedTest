@@ -5,7 +5,7 @@ const android = {
   port: 4723,
   capabilities: {
     platformName: 'Android',
-    deviceName: '<using adb devices to get the device name>',
+    deviceName: '52000bbe4a443511',
     // app: 'D:/Study/app-debug.apk',
     automationName: 'UiAutomator2',
     appPackage: 'com.reanimatedtest',
